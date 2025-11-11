@@ -272,12 +272,12 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      margin: auto;
+      margin:auto;
     }
 
     .service-card {
       position: relative;
-      height: 350px;
+      height: 400px;
       border-radius: 180px 0 0 0;
       color: #fff;
       overflow: hidden;
@@ -285,13 +285,13 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      /* transition: transform 0.4s ease, box-shadow 0.4s ease; */
       background-size: cover;
       background-position: center;
     }
     .service-card2 {
       position: relative;
-      height: 350px;
+      height: 400px;
       border-radius: 0 180px 0 0;
       color: #fff;
       overflow: hidden;
@@ -309,14 +309,14 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.55);
+      /* background: rgba(0, 0, 0, 0.55); */
       z-index: 1;
     }
     .service-card2::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.55);
+      /* background: rgba(0, 0, 0, 0.55); */
       z-index: 1;
     }
 
@@ -368,8 +368,8 @@
 
     .service-card3 {
       position: relative;
-      height: 350px;
-      border-radius: 0 180px 0 0;
+      height: 400px;
+      border-radius: 0 0 0 180px;
       color: #fff;
       overflow: hidden;
       display: flex;
@@ -382,8 +382,8 @@
     }
     .service-card4 {
       position: relative;
-      height: 350px;
-      border-radius: 0 180px 0 0;
+      height: 400px;
+      border-radius: 0 0 180px 0;
       color: #fff;
       overflow: hidden;
       display: flex;
@@ -400,14 +400,14 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.55);
+      /* background: rgba(0, 0, 0, 0.55); */
       z-index: 1;
     }
     .service-card4::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.55);
+      /* background: rgba(0, 0, 0, 0.55); */
       z-index: 1;
     }
 
