@@ -14,7 +14,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 80px;
+      padding: 20px 80px;
       background-color: #fff;
     }
 
@@ -33,7 +33,7 @@
     .nav-links a {
       text-decoration: none;
       color: #333;
-      font-weight: 600;
+      font-weight: 700;
       transition: 0.3s ease;
     }
 
@@ -49,16 +49,17 @@
 
     .auth a {
       text-decoration: none;
-      font-weight: 400;
-      color: #333;
+      font-weight: 700;
+      /* color: #D4CCC9; */
     }
 
     .signup {
       border: 1px solid #0097a7;
       color: #0097a7;
-      padding: 6px 18px;
-      border-radius: 2px;
+      padding: 10px 20px;
+      border-radius: 10px;
       transition: 0.3s;
+      font-weight: 700;
     }
 
     .signup:hover {
