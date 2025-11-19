@@ -6,7 +6,7 @@
     }
 
     body {
-      background-color: #fff;
+      background-color: #FFFFFF;
     }
 
     nav {
@@ -464,26 +464,85 @@
 
     
 
-    .Services-section{
+    .Features-section{
       text-align: center;
       padding-top: 80px;
     }
 
-    .Services-section h1{
+    .Features-section h1{
       font-size: 55px;
       font-weight: 600;
     }
 
-    .Services-section h1 span{
+    .Features-section h1 span{
       color: #008b99;
     }
 
-    .Services-section p {
+    .Features-section p {
     /* font-family:; */
     font-size: 20px;
     font-weight: 300;
     color: #6C757D;
-    padding-top: 5px;
     }
 
+    .Features-text{
+      padding: 40px;
+      gap: 25px;
+    }
+
+    .Features-card{
+      display: inline-flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 30px;
+      padding: 50px;
+    }
+    .features-card-1{
+      border: 1px solid rgb(208, 208, 208);
+      background-color: white;
+      color: #008b99;
+      padding: 20px;
+      box-shadow: #555;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.12);
+      border-radius: 10px;
+    }
+
+    .features-card-1 h1{
+      font-size: 20px;
+      font-weight: 700
+    }
+    .features-card-1 p{
+      font-size:16px ;
+      padding: 15px;
+      color: black;
+    }
+    .features-card-1 button:hover{
+      text-decoration: underline;
+    }
+
+
+
+    .features-card-2{
+      border: 1px solid rgb(208, 208, 208);
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .features-card-2 h1{
+      font-size: 20px;
+      font-weight: 700
+    }
+    .features-card-2 p{
+      font-size:16px ;
+      padding: 15px;
+      color: black;
+
+    }
+    .features-card-2 button:hover{
+      color: #008b99;
+      text-decoration: underline;
+    }
 
