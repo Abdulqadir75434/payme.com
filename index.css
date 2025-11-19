@@ -464,3 +464,26 @@
 
     
 
+    .Services-section{
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .Services-section h1{
+      font-size: 55px;
+      font-weight: 600;
+    }
+
+    .Services-section h1 span{
+      color: #008b99;
+    }
+
+    .Services-section p {
+    /* font-family:; */
+    font-size: 20px;
+    font-weight: 300;
+    color: #6C757D;
+    padding-top: 5px;
+    }
+
+
