@@ -662,7 +662,10 @@
 
     .Pricing-section-card-1{
       border: 1px solid rgb(208, 208, 208);
-      padding: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
 
@@ -674,5 +677,12 @@
     .Pricing-section-card-1 h1{
       font-size: 60px;
       font-weight: 700;
+      padding-bottom: 15px;
+      padding-top: 8px;
 
     }
+    .Pricing-section-card-1 ul li{
+      font-size: 16px;
+      font-weight: 400;
+      text-align: start;
+      }
