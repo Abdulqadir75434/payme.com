@@ -659,6 +659,12 @@
       text-align: center;
       padding: 40px;
     }
+    
+     .Pricing-section-card{
+      display: inline-flex;
+      text-align: center;
+      gap: 30px;
+     }
 
     .Pricing-section-card-1{
       border: 1px solid rgb(208, 208, 208);
@@ -666,6 +672,7 @@
       padding-bottom: 30px;
       padding-left: 40px;
       padding-right: 40px;
+      border-radius: 10px;
     }
 
 
