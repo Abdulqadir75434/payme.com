@@ -820,12 +820,13 @@
 
 
     .faq-body {
-        padding: 20px;
-        font-size: 18px;
-        line-height: 1.6;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.4;
         color: black;
         display: none;
         text-align: start;
+        font-weight: 500;
     }
 
     .active .faq-body {
