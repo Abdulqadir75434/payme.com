@@ -9,76 +9,103 @@
       background-color: #FFFFFF;
     }
 
-    nav {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 80px;
-      background-color: #fff;
-    }
+   nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #fff;
+  position: relative;
+}
+.logo {
+  font-weight: 700;
+  color: #0097a7;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.nav-links a:hover {
+  color: #0097a7;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.auth a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.signup {
+  border: 1px solid #0097a7;
+  color: #0097a7;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.signup:hover {
+  background-color: #0097a7;
+  color: #fff;
+}
 
-    .logo {
-      font-weight: 700;
-      color: #0097a7; /* teal color */
-      font-size: 18px;
-      text-decoration: none;
-    }
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+.menu-bar {
+  width: 100%;
+  height: 4px;
+  background: #0097a7;
+  border-radius: 2px;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
+/* Responsive Nav */
+@media (max-width: 900px) {
+  nav {
+    padding: 15px 18px;
+  }
 
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 700;
-      transition: 0.3s ease;
-    }
+  .nav-links, .auth {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 100;
+    display: none;
+  }
 
-    .nav-links a:hover {
-      color: #0097a7;
-    }
+  .nav-links.active, .auth.active {
+    display: flex;
+  }
 
-    .auth {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+  .menu-toggle {
+    display: flex;
+  }
+}
 
-    .auth a {
-      text-decoration: none;
-      font-weight: 700;
-      /* color: #D4CCC9; */
-    }
-
-    .signup {
-      border: 1px solid #0097a7;
-      color: #0097a7;
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-      font-weight: 700;
-    }
-
-    .signup:hover {
-      background-color: #0097a7;
-      color: #fff;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-      }
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
 
 
     .hero {
@@ -955,14 +982,160 @@
   }
 
   
-  @media (max-width: 820px) {
-    .footer-grid { gap: 28px; }
-    .brand .logo { font-size: 30px; }
-    .col { flex: 1 1 220px; }
+  @media (max-width: 991px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 14px 16px;
   }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+  .auth {
+    gap: 12px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 24px 8px;
+    gap: 20px;
+  }
+  .hero-content {
+    padding: 0px;
+    max-width: 100vw;
+  }
+  .hero-image img {
+    max-width: 340px;
+  }
+  .hero-content h1 {
+    font-size: 38px;
+  }
+}
 
-  @media (max-width: 520px) {
-    .footer-grid { flex-direction: column; gap: 24px; }
-    .brand .logo { font-size: 28px; }
-    .brand p { max-width: 100%; }
+@media (max-width: 767px) {
+  .services, .services-2 {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
+  .service-card, .service-card2, .service-card3, .service-card4 {
+    height: 200px;
+    min-width: 90vw;
+    font-size: 0.96rem;
+    margin-top: 10px;
+  }
+  .Features-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  .Features-section h1,
+  .Services-section h1,
+  .Clients-section-text h1 {
+    font-size: 30px;
+  }
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+    gap:6px;
+    padding: 6px;
+  }
+  .image-box img {
+    min-width: 88px;
+    max-width: 130px;
+  }
+  .Pricing-section-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 6px;
+    max-width: 100vw;
+  }
+  .Pricing-section-card-1, .Pricing-section-card-2 {
+    padding: 10px 4px;
+    border-radius: 7px;
+  }
+  .faq-section {
+    padding: 14px 2px;
+  }
+  .Cta-section h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .site-footer {
+    padding: 14px 2px 10px;
+  }
+  .footer-grid{flex-direction: column; gap:9px;}
+  .col{flex:1 1 100%; min-width:110px;}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* NAVBAR MOBILE */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 10px;
+    gap: 8px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .auth {
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* FEATURES CARD MOBILE */
+@media (max-width: 800px) {
+  .Features-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    align-items: stretch;
+    margin-bottom: 10px;
+  }
+  .features-card-1, .features-card-2 {
+    margin: 0 auto;
+    min-width: 60vw;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* PRICING PLAN MOBILE */
+@media (max-width: 800px) {
+  .Pricing-section-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    align-items: center;
+    max-width: 100vw;
+  }
+  .Pricing-section-card-1, .Pricing-section-card-2 {
+    min-width: 70vw;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 9px;
+    padding: 16px 8px;
+  }
+  .Pricing-section-card-2 {
+    box-shadow: 0 6px 8px rgba(0,0,0,0.10);
+    position: relative;
+    bottom: 0;
+  }
+}
+
+/* Universal fluid image */
